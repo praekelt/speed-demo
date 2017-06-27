@@ -17,6 +17,7 @@ virtualenv ${VENV}
 ./${VENV}/bin/python manage.py load_photosizes
 ./${VENV}/bin/python manage.py load_layers
 ./${VENV}/bin/python manage.py createsuperuser
+./${VENV}/bin/python manage.py speed_data
 
 echo "Setting up nvm and npm."
 nvm install
