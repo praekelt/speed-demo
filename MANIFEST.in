@@ -1,0 +1,8 @@
+include AUTHORS.rst
+include CHANGELOG.rst
+include LICENSE
+include README.rst
+include setup-development.sh
+recursive-include mote *
+recursive-include scripts *
+recursive-include speed *

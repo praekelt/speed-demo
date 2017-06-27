@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<h1>Tree - optimized and strictly correct</h1>
+
+<ul>
+{% for object, children in tree.items %}
+    <li>{{ object.title }} has target {{ object.target.title }}</li>
+        <ul>
+            {% for child in children %}
+                <li>{{ child.title }} has target {{ child.target.title }}</li>
+            {% endfor %}
+        </ul>
+{% endfor %}
+</ul>
+
+</body>
+</html>

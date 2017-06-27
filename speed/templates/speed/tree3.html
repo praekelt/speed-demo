@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<h1>Tree - hierarchy in a single query, generic foreigns keys optimized</h1>
+
+<ul>
+{% for object, children in tree.items %}
+    <li>{{ object.title }} has target {{ object.mytarget.title }}</li>
+        <ul>
+            {% for child in children %}
+                <li>{{ child.title }} has target {{ child.mytarget.title }}</li>
+            {% endfor %}
+        </ul>
+{% endfor %}
+</ul>
+
+</body>
+</html>

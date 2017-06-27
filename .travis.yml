@@ -1,0 +1,11 @@
+sudo: false
+language: python
+cache: pip
+
+env:
+  - TOXENV=django19-travis
+
+install:
+  - pip install tox
+
+script: tox
